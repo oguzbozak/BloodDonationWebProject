@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Kan Bağışı Sitesi</title>
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="~/images/logo.png" height="80" />
+            <a class="navbar-brand" href="/home">Kanver.org</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/home">Ana Sayfa <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/hakkımızda">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/kutuphane">E-Kütüphane</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/iletişim">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/Randevu">Randevu Al</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/Konum">Bağış Noktaları</a>
+                    </li>
+
+                </ul>
+                
+
+            </div>
+        </nav>
+    </header>
+    
+    <main role="main">
+        @RenderBody()
+    </main>
+  
+    
+        <footer class="border-top footer text-muted text-center">   
+            <div class="container">
+                <p>&copy; 2021 - KanVer.org <b>Designed by Izzet Oguz Bozak</b></p>
+                
+            </div>
+        </footer>
+    
+       
+  
+</body>
+</html>
